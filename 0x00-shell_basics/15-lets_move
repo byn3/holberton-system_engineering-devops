@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -regex "*[A-Z]*" mv . /tmp/u
+mv -name ./[[:upper:]] /tmp/u
