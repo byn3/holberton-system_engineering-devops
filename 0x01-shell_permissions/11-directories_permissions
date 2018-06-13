@@ -1,2 +1,2 @@
 #!/bin/bash
-find . type d -exec chmod 555 {} +
+find . type d -exec chmod a+x
