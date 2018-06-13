@@ -1,2 +1,2 @@
 #!/bin/bash
-if [$USER-eq guillaume];then -exec chown betty hello
+chown --from guillaume: betty hello
