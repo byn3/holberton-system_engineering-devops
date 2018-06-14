@@ -107,6 +107,8 @@ At the end of this project you are expected to be able to explain to anyone, wit
 **What is a Shebang?**  
 *A character sequence at the beginning of a script, also known as hashbang or pound-bang. Lots of the files in this dir is \#!/bin/bash and that instructs the machine to run bin/bash before the rest.*  
 
+Each scripts and their output
+
 #### Limitations of these projects:  
 ---
 -Allowed editors: vi, vim, emacs  
