@@ -90,35 +90,30 @@ At the end of this project you are expected to be able to explain to anyone, wit
 *NAME is the name of the command or function, followed by a short description. SYNOPSIS is a formal description of how to run it and what command line options it accepts. Usually a list of arguments and which header file contains the definition.*  
 
 **What are man page sections?**  
-*.*  
+*The numbers correspond to what section of the manual that the page is from. 1 is user commands, 8 is sysadmin, etc.*  
 
 **What are the section numbers for User commands, System calls and Library functions?**  
-*.*  
+*1 is user commands, 2 is system calls, 3 is C library, 4 is devices and special files, 5 is file formats and conventions, 6 is Games et. al., 7 is miscellanea, 8 is system administration tools and daemons. Additional sections exist.*  
 
-**Keyboard shortcuts for Bash?**  
-*.*  
-
-**Common shortcuts for Bash?**  
-*.*  
-
-**LTS?**  
-*.*  
+**Common shortcuts for Bash: ONES THAT BRYAN SHOULD ISE ALL THE TIME**  
+*Ctrl+c to kill current process via SIGINT request. Ctrl+s stops screen output but wil still run process. Ctrl+l clears screen. Ctrl+a is beginning of line, ctrl+e is end of line. Alt+b is go back a word, alt+f go forward one word. Alt+d deletes all chars after cursor on current line. Ctrl+_ is undo. Ctrl+y is paste/yank and ctrl+w cuts word before cursor, ctrl+u cuts part of line before cursor, ctrl+k cuts part of line after cursor.*  
 
 **What does LTS mean?**  
-*.*  
+*Long Term Support. It is the mindset that LTS is enterprise focused, compatible with new hardware, and tested more.*  
 
 **What does RTFM mean?**  
-*.*  
+*READTHEFUCKENMANUAL.*  
 
 **What is a Shebang?**  
-*.*  
+*A character sequence at the beginning of a script, also known as hashbang or pound-bang. Lots of the files in this dir is \#!/bin/bash and that instructs the machine to run bin/bash before the rest.*  
 
-Requirements
-Allowed editors: vi, vim, emacs
-All your scripts will be tested on Ubuntu 14.04 LTS
-All your scripts should be exactly two lines long ($ wc -l file should print 2)
-All your files should end with a new line (why?)
-The first line of all your files should be exactly #!/bin/bash
-A README.md file, at the root of the folder of the project, describing what each script is doing
-You are not allowed to use backticks, &&, || or ;
-All your scripts must be executable. Use this command: chmod u+x file. We will see later what it means.
+#### Limitations of these projects:  
+---
+-Allowed editors: vi, vim, emacs  
+-All your scripts will be tested on Ubuntu 14.04 LTS  
+-All your scripts should be exactly two lines long ($ wc -l file should print 2)  
+-All your files should end with a new line (unless you use vim)  
+-The first line of all your files should be exactly #!/bin/bash  
+-A README.md file, at the root of the folder of the project, describing what each script is doing  
+-You are not allowed to use backticks, &&, || or ;  
+-All your scripts must be executable.    
