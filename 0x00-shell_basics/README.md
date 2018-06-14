@@ -72,28 +72,22 @@ At the end of this project you are expected to be able to explain to anyone, wit
 *The asterisk, or star, or multiply sign, is a wild card. Anything can be put in. It can be everything or anythinng. It can be super specific if you follow proper syntax or regex stuff.*  
 
 **How to use wildcards?**  
-*.*  
-
-**Working With Commands?**  
-*.*  
+*Star card is most common. It cna be anything, even zero chars. the question mark wild card means that can be any one single character. So c?t can be cat or cot or cut. Square brackets wild cards are any of the caracters inside the bracket. So common uses are vowels \[aeiou]. Hyphens inside mean include inbetween like a-g means a through g. \[a-dog]* would mean to look for anything that stats with a through d or begins with o or g.[0-9][0-9][0-9] looks for all 3 digit numbers.*  
 
 **What do type, which, help, man commands do?**  
-*.*  
+*type displays information about command type. which shows full path of commands. help shows a ton of different commands. Typing in help onto the command line is self-explanatory. man shows manuals. type man and it will prompt which page number.*  
 
 **What are the different kinds of commands?**  
-*.*  
+*Type "type type" or "type alias" to see different types. Some might be a shell builtin, others are locaed in important directories.*  
 
 **What is an alias?**  
-*.*  
+*A command that enables a replacement of a word by another string. Common for abbreviating a system command.*  
 
 **When do you use the command help instead of man?**  
-*.*  
-
-**Reading Man Pages?**  
-*.*  
+*help is a bash command. It uses internal bash structures to store and retrieve info about bash commands. man is a macro that uses troff (geoff). The output of processing a file is sent to a pager by the an by default. info is a text-only viewer for archives in the output format of Texinfo*  
 
 **How to read a man page?**  
-*.*  
+*NAME is the name of the command or function, followed by a short description. SYNOPSIS is a formal description of how to run it and what command line options it accepts. Usually a list of arguments and which header file contains the definition.*  
 
 **What are man page sections?**  
 *.*  
