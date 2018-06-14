@@ -19,94 +19,95 @@ At the end of this project you are expected to be able to explain to anyone, wit
 
 **How to navigate the filesystem?**  
 *cd, ls, cd, ls... throw in 'ls -a' to see hidden files.*  
-**What are the . and .. directories**  
+
+**What are the . and .. directories?**  
 *. is current and .. is parent.*  
 
-**What is the working directory, how to print it and how to change it**  
+**What is the working directory, how to print it and how to change it?**  
 *The working directory is the current folder you are in. pwd is to change and refer above how to navigate or change it.*  
 
-**What is the root directory**  
+**What is the root directory?**  
 *The root is the highest or top directory in the hiearchy, it contains all other files.*  
 
-**What is the home directory, and how to go there**  
+**What is the home directory, and how to go there?**  
 *Say this in E.T.'s voice, "cd go home." The home dir is the login directory, or the repo of the user's personal files. It is usually the first one you are inside once logging into the system.*  
 
-**What is the difference between the root directory and the home directory of the user root**  
+**What is the difference between the root directory and the home directory of the user root?**  
 *The home directory is in the root. The root is king of all. Root is topmost level, referred by '/.' while home is the user and has folders like Documents or Music or Pictures and is referred to by '~'.*  
 
-**What are the characteristic of hidden files and how to list them**  
+**What are the characteristic of hidden files and how to list them?**  
 *They begin with a '.' usually and they are listed with the -a flag.*  
 
-**What does the command cd - do**  
+**What does the command cd - do?**  
 *cd - brings your back to the previous directory.*  
 
-**What do the commands ls, less, file do**  
+**What do the commands ls, less, file do?**  
 *ls lists the files and dir in the current working dir. less views the file instead of opening them. file shows the type of data contained in a computer file.*  
 
-**How do you use options and arguments with commands**  
+**How do you use options and arguments with commands?**  
 *You would use the option indicator '-' and that would allow the use of flags. Arguments, or parameters, are the targeted file names or dir or other stuff you are trying to manipulate. Extra C facts (argc contains the number of arguments passed from the command line and argv contains the pointer to strings containing the names of these arguments).*  
 
-**Understand the ls long format and how to display it**  
+**Understand the ls long format and how to display it?**  
 *la -l. The long format shows the file permissions, owner, group, size in bytes, modification time, and file name.*  
 
-**What does the ln command do**  
+**What does the ln command do?**  
 *It creates a hard link to an existing file. If it has the flag -s then it is a symbolic link. This allows multiple filenames to be*  
 
-**What do you find in the most common/important directories**  
+**What do you find in the most common/important directories?**  
+*[Answer in this link](http://www.dba-oracle.com/linux/important_files_directories.htm). We got all the good stuff in this link, scroll down to important directories. Theres boot which helps boot the process and kernel, bin with its binary stuff, tmp, usr, and tons of other important ones*  
+
+**What is a symbolic link?**  
+*Also known as soft link or symlink. This is a term for any file that contains a reference to another file or dir in the form of an absolute or relative path. Basically it makes text string that is connected to a target and it is like a pointer. Symbolic links can point to non-existant files.*  
+
+**What is a hard link?**  
+*Hard links cannot point to nothing. They must always refer to an existing file. Hard links .*  
+
+**What is the difference between a hard link and a symbolic link?**  
+*Hard is hard. Really connected. If the original goes so does the hard link. For symbollic, there can be an orphaned or dangling link. Symbolic links can exist on their own and arn't completely dependent on the target file for existing*  
+
+**What do the commands cp, mv, rm, mkdir do?**  
+*cp copies. mv moves or renames. rm removes files or directories. mkdir makes directories.*  
+
+**What are wildcards and how do they work?**  
+*The asterisk, or star, or multiply sign, is a wild card. Anything can be put in. It can be everything or anythinng. It can be super specific if you follow proper syntax or regex stuff.*  
+
+**How to use wildcards?**  
 *.*  
 
-**What is a symbolic link**  
+**Working With Commands?**  
 *.*  
 
-**What is a hard link**  
+**What do type, which, help, man commands do?**  
 *.*  
 
-**What is the difference between a hard link and a symbolic link**  
+**What are the different kinds of commands?**  
 *.*  
 
-**What do the commands cp, mv, rm, mkdir do**  
+**What is an alias?**  
 *.*  
 
-**What are wildcards and how do they work**  
+**When do you use the command help instead of man?**  
 *.*  
 
-**How to use wildcards**  
+**Reading Man Pages?**  
 *.*  
 
-**Working With Commands**  
+**How to read a man page?**  
 *.*  
 
-**What do type, which, help, man commands do**  
+**What are man page sections?**  
 *.*  
 
-**What are the different kinds of commands**  
+**What are the section numbers for User commands, System calls and Library functions?**  
 *.*  
 
-**What is an alias**  
+**Keyboard shortcuts for Bash?**  
 *.*  
 
-**When do you use the command help instead of man**  
+**Common shortcuts for Bash?**  
 *.*  
 
-**Reading Man Pages**  
-*.*  
-
-**How to read a man page**  
-*.*  
-
-**What are man page sections**  
-*.*  
-
-**What are the section numbers for User commands, System calls and Library functions**  
-*.*  
-
-**Keyboard shortcuts for Bash**  
-*.*  
-
-**Common shortcuts for Bash**  
-*.*  
-
-**LTS**  
+**LTS?**  
 *.*  
 
 **What does LTS mean?**  
@@ -115,7 +116,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 **What does RTFM mean?**  
 *.*  
 
-**What is a Shebang**  
+**What is a Shebang?**  
 *.*  
 
 Requirements
