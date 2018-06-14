@@ -1,13 +1,8 @@
-eadme
-Read the pages What Is “The Shell”?, Navigation, Looking Around, A Guided Tour, Manipulating Files and Working With Commands from Learning the Shell as well as Reading Man pages and Keyboard shortcuts for Bash. Last, read the pages LTS and Shebang.
-
-man or help: cd, ls, pwd, less, file, ln, cp, mv, rm, mkdir, type, which, help, man
-
-What you should learn from this project
+# What I learned from this project  
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:
 
 What Is “The Shell”?
-What is the shell
+  The Shell is
 What is the difference between a terminal and a shell
 What is the shell prompt
 How to use the history (the basics)
