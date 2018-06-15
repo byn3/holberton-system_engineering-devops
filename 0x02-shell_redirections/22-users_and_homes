@@ -1,2 +1,2 @@
 #!/bin/bash
-sort compgen -u
+cut -f 1 -d '/' /etc/passwd | sort
