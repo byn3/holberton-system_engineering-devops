@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | cut -c3-
+find . -empty -printf '%f\n'
