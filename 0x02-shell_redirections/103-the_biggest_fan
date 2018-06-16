@@ -1,2 +1,2 @@
 #!/bin/bash
-echo WHATDOIDOFORTHIS
+sort | cut -f1 | uniq -c | sort -nr | head -11
