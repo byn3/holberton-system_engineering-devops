@@ -1,2 +1,3 @@
 #!/bin/bash
-echo $PATH | tr '/' ' ' | tr "*:" ' ' | tr ".*" ' ' | tr -d ' \t\n\r\f' | wc -w
+echo $PATH | tr '/' '\n' | tr "*:" '\n' | tr ".*" '\n' | sort | uniq -u | wc -l
+
