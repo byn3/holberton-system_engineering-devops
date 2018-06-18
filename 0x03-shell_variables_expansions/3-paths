@@ -1,2 +1,2 @@
 #!/bin/bash
-
+echo $PATH | tr '/' ' ' | tr "*:" ' ' | tr ".*" ' ' | tr -d ' \t\n\r\f' | wc -w
