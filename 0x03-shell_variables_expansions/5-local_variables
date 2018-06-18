@@ -1,2 +1,2 @@
 #!/bin/bash
-export | rev | cut -d ' ' -f1 | rev
+set
