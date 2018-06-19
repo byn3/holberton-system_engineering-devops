@@ -1,2 +1,2 @@
 #!/bin/bash
-$((behlnort#$((((water#$WATER)+(stir.#$STIR))))))
+$((behlnort#$(((water#$WATER)+(stir.#$STIR)))))
