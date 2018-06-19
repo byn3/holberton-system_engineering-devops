@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n '0~2p'
+\ls -1 | grep -n [a-zA-Z0-9] | grep '[13579]'
