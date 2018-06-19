@@ -1,2 +1,2 @@
 #!/bin/bash
-
+ste -sd'\0\n'
