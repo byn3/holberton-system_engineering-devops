@@ -1,2 +1,2 @@
 #!/bin/bash
-paste -sd'\0\n'
+sed -n '0~2p'
