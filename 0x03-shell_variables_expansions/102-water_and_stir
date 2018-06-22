@@ -1,2 +1,10 @@
 #!/bin/bash
-echo $((behlnort#($(((water#$WATER)+(stir.#$STIR))))))
+echo $(( 8#$(((5#$WATER)+(5#$STIR)))))
+tr 'water' '01234' 
+$((5#$WATER | tr 'water 01234'))
+0 1 2 3 4
+W A T E R
+S T I R .
+
+0 1 2 3 4 5 6 7
+B E H L N O R T
