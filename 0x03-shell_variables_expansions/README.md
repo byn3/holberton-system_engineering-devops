@@ -24,8 +24,8 @@ At the end of this project you are expected to be able to explain to anyone, wit
 **What are special parameters?**  
 *Parameters that can only be referenced and not assigned. * expands positional parameters. @ expands positional parameters. Differences within quotes and other stuff exist. # expands the number of parameters in decimal. ? expands to the exit status of the most recently executed foreground pipeline. - expands current flag option. $ expands to the process ID of the shell. ! expands to the process ID of the job most recently placed into the background. 0 expands the name of the shell or shell script. This is set at shell initialization and usually 0 is set to the filename used to invoke bash. _ expands to the last argument to the previous command after expansion. Also set to the pull pathname used to invoke each command. Useful for mail purposes.*  
 
-**What is the special parameter $?**  
-*? expands the exit status of the most recently executed foreground pipeline.*  
+**What is the special parameter =$?**  
+* ? expands the exit status of the most recently executed foreground pipeline.*  
 
 **What is expansion and how to use them?**  
 * * is an example of an expansion. With expansion when I type something and it is expanded into something else before the shell acts upon it. Expansion can be used like grep. We have pathname expansion, tilde expansion, arithmetic expansion, brace expansion, parameter expansion, and command substitution. Use them with wildcards for maximum omg.*  
