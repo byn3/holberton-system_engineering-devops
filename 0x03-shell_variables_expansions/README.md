@@ -2,7 +2,7 @@
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:  
 ---  
 
-##BLOG POST:  
+## BLOG POSTS:  
 #### What happens when you type ls *.c
 https://www.linkedin.com/pulse/what-happens-when-you-type-ls-c-bryan-leung/  
 
