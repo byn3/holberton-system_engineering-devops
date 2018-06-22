@@ -8,3 +8,5 @@ S T I R .
 0 1 2 3 4 5 6 7
 B E H L N O R T
 8#(tr ($((5#(tr $WATER 'water' '01234')))+ $((5#(tr $STIR 'stir.' '01234')))) 'behlnort' '01234567')
+echo $WATER | tr 'water' '01234' outputs 30012412301
+echo $STIR | tr 'stir.' '01234' outputs 12421231313
