@@ -72,7 +72,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 *Script 103 - Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests. Order by number of requests, most active host or IP at the top. You are not allowed to use grep, egrep, fgrep or rgrep.  
 
 
-#### Limitation of these proects:  
+#### Limitation of these projects:  
 ___
 -Allowed editors: vi, vim, emacs  
 -All your scripts will be tested on Ubuntu 14.04 LTS  
