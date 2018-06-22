@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{if( NR%2 ){print}}' 
+grep -n "[a-zA-Z0-9]" | grep "[13579]:" | cut -d ':' -f2
