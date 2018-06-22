@@ -60,7 +60,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 *Script 101 - Create a man that looks exactly like this one and passes all checks. NOTE: A new line is not necessary at the end of this file, refer to the output of wc, as shown below.  
 
 
-#### Limitation of these proects:  
+#### Limitation of these projects:  
 ___
 -Allowed editors: vi, vim, emacs  
 -All your scripts will be tested on Ubuntu 14.04 LTS  
