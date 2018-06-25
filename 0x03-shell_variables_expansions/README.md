@@ -32,10 +32,10 @@ https://www.linkedin.com/pulse/what-difference-between-hard-link-symbolic-bryan-
 *Parameters that can only be referenced and not assigned. * expands positional parameters. @ expands positional parameters. Differences within quotes and other stuff exist. # expands the number of parameters in decimal. ? expands to the exit status of the most recently executed foreground pipeline. - expands current flag option. $ expands to the process ID of the shell. ! expands to the process ID of the job most recently placed into the background. 0 expands the name of the shell or shell script. This is set at shell initialization and usually 0 is set to the filename used to invoke bash. _ expands to the last argument to the previous command after expansion. Also set to the pull pathname used to invoke each command. Useful for mail purposes.*  
 
 **What is the special parameter =$?**  
-* ? expands the exit status of the most recently executed foreground pipeline.*  
+*The parameter ? expands the exit status of the most recently executed foreground pipeline.*  
 
 **What is expansion and how to use them?**  
-* * is an example of an expansion. With expansion when I type something and it is expanded into something else before the shell acts upon it. Expansion can be used like grep. We have pathname expansion, tilde expansion, arithmetic expansion, brace expansion, parameter expansion, and command substitution. Use them with wildcards for maximum omg.*  
+*An example of an expansion is *. With expansion when I type something and it is expanded into something else before the shell acts upon it. Expansion can be used like grep. We have pathname expansion, tilde expansion, arithmetic expansion, brace expansion, parameter expansion, and command substitution. Use them with wildcards for maximum omg.*  
 
 **What is the difference between single and double quotes and how to use them properly?**  
 *Single quotes will not interpret the code so echo '$(echo "poop")' will output (echo "poop"). Double quotes will interpolate which means echo "(echo "YASSS 4 star!")" will print out YASSS 4 star!*  
@@ -62,23 +62,23 @@ https://www.linkedin.com/pulse/what-difference-between-hard-link-symbolic-bryan-
 *No such file or directory. But if i did have any files that ended with .txt it would show in long format.*  
 
 ## Each scripts and their output?**  
-*Script 0 - Create a script that creates an alias. Name: ls. Value: rm  
-*Script 1 - Create a script that prints hello user, where user is the current Linux user.  
-*Script 2 - Add /action to the PATH. /action should be the last directory the shell looks into when looking for a program.  
-*Script 3 - Create a script that counts the number of directories in the PATH.  
-*Script 4 - Create a script that lists environment variables.  
-*Script 5 - Create a script that lists all local variables and environment variables, and functions  
-*Script 6 - Create a script that creates a new local variable. Name: BETTY. Value: Holberton  
-*Script 7 - Create a script that creates a new global variable. Name: HOLBERTON. Value: Betty.  
-*Script 8 -  Write a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.  
-*Script 9 -Write a script that prints the result of POWER divided by DIVIDE, followed by a new line. POWER and DIVIDE are environment variables  
-*Script 10 - Write a script that displays the result of BREATH to the power LOVE. BREATH and LOVE are environment variables. The script should display the result, followed by a new line  
-*Script 11 - Write a script that converts a number from base 2 to base 10. The number in base 2 is stored in the environment variable BINARY. The script should display the number in base 10, followed by a new line  
-*Script 12 - Create a script that prints all possible combinations of two letters, except oo. Letters are lower cases, from a to z. One combination per line. The output should be alpha ordered, starting with aaDo not print oo. Your script file should contain maximum 64 characters.  
-*Script 13 - Write a script that prints a number with two decimal places. The number will be stored in the environment variable NUM.  
-*Script 14 -Write a script that converts a number from base 10 to base 16. The number in base 10 is stored in the environment variable DECIMAL. The script should display the number in base 16, followed by a new line  
-*Script 100 - Write a script that encodes and decodes text using the rot13 encryption.  
-*Script 101 - Write a script that prints every other line from the input, starting with the first line.  
+* Script 0 - Create a script that creates an alias. Name: ls. Value: rm  
+* Script 1 - Create a script that prints hello user, where user is the current Linux user.  
+* Script 2 - Add /action to the PATH. /action should be the last directory the shell looks into when looking for a program.  
+* Script 3 - Create a script that counts the number of directories in the PATH.  
+* Script 4 - Create a script that lists environment variables.  
+* Script 5 - Create a script that lists all local variables and environment variables, and functions  
+* Script 6 - Create a script that creates a new local variable. Name: BETTY. Value: Holberton  
+* Script 7 - Create a script that creates a new global variable. Name: HOLBERTON. Value: Betty.  
+* Script 8 -  Write a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.  
+* Script 9 -Write a script that prints the result of POWER divided by DIVIDE, followed by a new line. POWER and DIVIDE are environment variables  
+* Script 10 - Write a script that displays the result of BREATH to the power LOVE. BREATH and LOVE are environment variables. The script should display the result, followed by a new line  
+* Script 11 - Write a script that converts a number from base 2 to base 10. The number in base 2 is stored in the environment variable BINARY. The script should display the number in base 10, followed by a new line  
+* Script 12 - Create a script that prints all possible combinations of two letters, except oo. Letters are lower cases, from a to z. One combination per line. The output should be alpha ordered, starting with aaDo not print oo. Your script file should contain maximum 64 characters.  
+* Script 13 - Write a script that prints a number with two decimal places. The number will be stored in the environment variable NUM.  
+* Script 14 -Write a script that converts a number from base 10 to base 16. The number in base 10 is stored in the environment variable DECIMAL. The script should display the number in base 16, followed by a new line  
+* Script 100 - Write a script that encodes and decodes text using the rot13 encryption.  
+* Script 101 - Write a script that prints every other line from the input, starting with the first line.  
 
 #### Limitations of these projects:  
 ___
