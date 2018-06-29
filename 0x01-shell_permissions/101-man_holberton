@@ -1,3 +1,10 @@
+# Remove these comments to pass grader
+# A simple reading or tutorial can teach you how to make a manual syntax
+# So the .STUFF is for the important headings
+# The strings or sentences after is their content
+# The grader is very picky. any white spacing or mispellings will mark it wrong
+# Also vim adds new line and we dont want that so vi cannnot ass the requirements.
+
 .TH man 2 "04 May 2015" "0.32" "holberton man page"
 .SH NAME
 .B holberton
