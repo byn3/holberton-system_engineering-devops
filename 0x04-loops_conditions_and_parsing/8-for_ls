@@ -4,5 +4,5 @@
 temp="${PWD}/*"
 
 for i in $temp ; do
-    basename "$i" | cut -d "-" -f2-
+    basename "$i" | cut -d "-" -f2
 done
