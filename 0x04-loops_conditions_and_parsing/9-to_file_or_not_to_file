@@ -9,7 +9,7 @@ if [ -e holbertonschool ]; then
     else
         echo 'holbertonschool file is empty'
     fi
-    if [ -f holbnertonschool ]; then
+    if [ -f holbertonschool ]; then
         echo 'holbertonschool file is a regular file'
     fi
 else
