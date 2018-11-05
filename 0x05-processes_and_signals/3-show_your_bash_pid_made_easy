@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# uses pgrep to display pid and bash. no -l omits bash
+
+pgrep -l bash
