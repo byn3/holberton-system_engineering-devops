@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# bypasses a trap.
+
+pgrep -f ./7-highlander | xargs kill -9 -1
