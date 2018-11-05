@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# cannot use kill to kill. use pkill
+
+pkill -f ./7-highlander
