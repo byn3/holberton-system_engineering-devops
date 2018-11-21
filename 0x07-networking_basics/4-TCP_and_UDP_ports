@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# bash script that shows listening sockets and shows stuff
+netstat -pl
