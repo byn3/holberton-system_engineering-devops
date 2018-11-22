@@ -165,6 +165,11 @@ are running a web server.
 
 Some guidelines to how IP addresses can look. The 4 numbers must be between 0
 and 255. IP addresses of 0 or 255 repeating is reserved. IP addresses must be
-unique for each computer connected zzz
+unique for each computer connected. If 2 computers have the same IP address, an
+IP conflict occurs and they cannot communicate with each other.
+
+IP address classes. Class A is 0 to 126. B is 128 to 191. C is 192 to 223. D is
+224 to 239. E is 240 to 255. 127 is skipped from class A to B because of
+loopback addresses.
 
 
