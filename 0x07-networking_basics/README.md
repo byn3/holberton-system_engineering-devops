@@ -170,6 +170,158 @@ IP conflict occurs and they cannot communicate with each other.
 
 IP address classes. Class A is 0 to 126. B is 128 to 191. C is 192 to 223. D is
 224 to 239. E is 240 to 255. 127 is skipped from class A to B because of
-loopback addresses.
+loopback addresses. Loopback targets your own computer and is useful for
+testing and debugging. The rest of the IP addresses are reserved for companies or
+orgs.
+
+0.0.0.0 is default network which is for general routing. Class A is for the 126
+networks that are usually the largest multi-national companies. Class B is
+usually for ISPs and major netowrks like college or hospitals. Class C is for
+smal to midsize companies. Class D is for a service called multicast. Class E
+is for experimental use. Broadcast is 255.255.255.255 which is used to
+broadcast messages to the entire network.
+
+Private addresses. 10 for class A. 172 for class B. 192 for C. These are for
+internal use for companies or homes. These are for networks that waant to use
+TCP/IP but do not want to be visible on the internet.
+
+Common problems and resolutions. One is assigning an IP that is already
+assigned. Most OS will give a IP conflict warning and that is caused by one
+device detecting another one on the same network using the same address.
+
+The best solution is to use a service called DHCP and most home routers provide
+this. DHCP is dynamic host configuration protocol and that assigns addresses to
+devices. You tell the DHCP what range of IP addresses you want and it handles
+the rest.
+
+Public IP addresses can be accessed over the internet and is globally unique.
+Private IP addresses is for stuff you want to hide from the Internet. The
+router will get the public IP and each of the private IP via DCHP protocol.
+
+IANA is internet assigned numbers authority. IANA is an org that registers IP
+addresses to orgs and ISPs. The InterNIC is the inernet network information
+center and they reserve certain address blocks for private use. The private IP
+addresses are 10 for A, 172 for B, 192 for C.
+
+To allow direct access to a local priovate device, a NAT (Network Address
+Translator) is needed. 
 
 
+TCP is transmission control protocol. This establishes virtual connections from
+a source to a destination. IP is internet protocol. IP specifies the
+technical format of packets and the address scheme. IP is like a postal address
+where you can drop off mail but there is not a direct link. TCP/IP is a
+connection so messages can be sent over a breif period of time. 
+
+The benefits of IPv6 is no more NAT (Network Address Translation), auto
+configs, no more private address collisions, better routing, simpler header
+format, flow labeling, built in authenticator and privacy, flexibility, easier
+administration, no more DHCP. 
+
+
+
+TCP and UDP are 2 protocols for different tyoes of data. TCP/IP is for devices
+to talk over the internet. TCP delivers and recieves and error checks data
+packets. UDP is user Datagram Protocol. That is faster by disregarding error
+checking. Packets are bits of data. They are sent throug hthe internet.
+
+TCP is the most common. When I request a web page in a browser, the computer
+sends the TCP packets to a web server's address. The web server will send the
+web page back via a stream of TCP packets. The web browser stiched together the
+packets to form the web page. Any action on a site from signing up to clicking
+links to posting comments will get the browser to send TCP packets to a server
+and the server will send packets back.
+
+TCP is all about reliability. The packets are tracked so no data is lost or
+corrupted, even if a network fucks up. If the recipient is offline then the
+computer just gives up and the error message is can't communicate with remote
+host.
+
+TCP orders packets by numbering them. It also error checks by having the
+recipient send a response back saying message was recieved. If the response is
+not right, the packet can be resent.
+
+Process explorer and other system utilities can show the types of connections a
+process makes.
+
+UDP works similar to TCP but no error checking. Latency increases with the back
+and forth error checking. But UDP just sends the next packet and if some are
+lost then oh well. This is very fast way of communication. UDP is meant for
+speed and not accuracy. This is the go to for online games and live
+broadcasting. 
+
+Twitch or live streams are UDP. There is a constant stream of UDP packets to
+computers watching and if connection is lost for a few seconds, the video
+freezes or gets jumpy and then will skip to the current. Minor packet loss
+causes video or audio distortion as videos continue to play without data.
+
+In online games, this is the same. Missing some UDP packets can cause player
+characters to teleport around. LAG. So whether an app uses TCP or UDP is up to
+the developer and what the app needs. Most apps need error correction but
+others need speed and reduced overhead. 
+
+This knowledge most affects netword admins or software developers. If you don't
+know if an app used TCP or UDP you can generally select both.
+
+
+https://en.wikipedia.org/wiki/List\_of\_TCP\_and\_UDP\_port\_numbers
+
+
+Ping is a computer network administration software utility used to test if a
+host is reachable on an IP netowrk. It measures round trip time. Ping uses ICMP
+or internet control message protocol echo request packets. The program will
+report errors, packet loss, and stats. The CLI or command line ping will vary
+due to size of payloads, number of tests, and other options. There is a ping6
+for testing IPv6.
+
+Positional parameters. Useful for bash scripts. $stuff. $#. $numbers. $\*. $@.
+Shift. Loops. Mass usage. Range. 
+
+
+
+At the end of this project you are expected to be able to explain, without the help of Google:
+
+OSI model
+What it is?
+Open systems interconnection model. Explains how a computer or network can communicate. Standardizes communication between computers.
+How many layers does it have?
+7
+How it is organized
+Application, Presentation, Session, Transport, Network, Data Link, Physical.
+https://www.webopedia.com/quick\_ref/OSI\_Layers.asp
+What is a LAN?
+Local Area Network.
+Typical usage
+Connects a computer to a home or office network and devices on a LAN can access data from any machine connected to the network.
+Typical geographical size.
+Home or office. Small I guess.
+What is a WAN
+WAN is a wide area network.
+Typical usage
+It connects multiple LANs over a wide area.
+Typical geographical size
+Huge. It can connect headquarters, branches, offices, clouds, etc.
+What is the Internet
+I don't know. Fucken magic?? It is a wide ass network that lets computer networks around the world run by governments, companies, universities, and other orgs talk to each other. It is a mass of cables, computers, data centers, routers, and a bunch of tech. 5 exabytes of data goes through the internet each day.
+IP address, what is it?
+Like a postal address for your computer.
+What are the 2 types of IP address
+IPv4 and IPv6. Version 4 and 6.
+What is localhost
+Local host is your own computer. Loopback.
+What is a subnet
+Subnetwork? It is a network inside a network. Breaking a large network into smaller ones. Delivers data efficiently. Subnets are like a mailroom. Subnets are the next tier of logical organization. IPs break down into the network ID and the the host ID. Smart pickles borrow some bits of the Host ID to create a subnet address like a subnet mask. 
+Why IPv6 was created
+Cause IPv4 will not be able to hold everything.
+TCP/UDP
+What are the 2 mainly used data transfer protocols for IP (transfer level on the OSI schema)
+TCP and UDP. One favors error checking and the other favors speed.
+What is the main difference between TCP and UDP
+Error checking.
+TCP/UDP Ports
+What is a port?
+A place where boats dock. HA. I'm so funny. A port is an endpoint of communication. A port is a specific process or a network service. A port is associated with an IP address and the protocol type. A port number is a 16 bit unsigned number and it is the network address of a message. 
+Memorize SSH, HTTP and HTTPS port numbers
+NOPE. THANK YOU. NEXT.
+What tool/protocol is often used to check if a device is connected to a network
+Ping baby.
