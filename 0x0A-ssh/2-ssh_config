@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# configures a file to connect without passwords
+Host holberton_server
+HostName 35.196.154.244
+# HEMANTS HostName 35.237.35.194
+Port 22
+User ubuntu
+IdentityFile ~/.ssh/holberton
+PasswordAuthentication no
