@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# code that automatically installs "engine x" and inserts a string in the site
+ssh ubuntu@35.196.154.244 -i ~/.ssh/holberton 'sudo apt-get -y install nginx'
+ssh ubuntu@35.196.154.244 -i ~/.ssh/holberton 'echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html'
