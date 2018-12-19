@@ -191,37 +191,82 @@ Problem 0:
 
 What is a server
 A computer or device that connects and accesses a network.
+A computer that servers lots of information to a user or client machines.
+It hosts games, shares files, and gives access to devices like printers.
 
 
 What is the role of the domain name
 Used to identify one or more IP addresses.
+Easier for humans to remember names over Ip addresses.
+
 
 What type of DNS record www is in www.foobar.com
-A record? it is a subdomain. 
+A record? It is a subdomain. 
+Record A specifies IPv4 and converts domain names to an IP address.
+
+
+Canonical Name (CNAME) is a domain name that has to be queried to resolve the
+DNS. It creates aliases of domain names.
+So example.com and www.example.com are examples. It will redirect.
+
 
 What is the role of the web server
 Sends back web content.
+A program that uses HTTP to make files and forms the site.
+Serves files that create web pages to users as responses to their requests.
 
-What is the role of the application server
+
+What is the role of the application server?
 Web apps or desktop apps run in application servers. Application servers have web server connectors, programming languages, runtime libraries, database connectors, and admin code that deploys, configures, manages, and connects the components on a web host. 
+Handles all application operations between the backend and databases for the
+user.
+Application server is used for complex transaction based apps.
+Application servers support the web service and buisness level stuff. It is
+between the network and the database. It deals with work requests.
+
 
 What is the role of the database
 Creation and management of data. Without it running and managing data is impossible.
+Data is used by different people in different departments for different
+reasons.
+Present raw data into useful information. Produce query results.
+Mainly used today to display updated info in web apps.
+Organized collection of data.
+
 
 What is the server using to communicate with the computer of the user requesting the website
-Web server.
+Web server. Or web browser? This question is poorly written.
+Client-server relationship. 
+
+
 
 You must be able to explain what are the issues with this infrastructure:
 SPOF
 If one server and that fails. It all fails. Need multiple. Need clusters.
 Also just one network switch is bad. That 1 switch is the SPOF. All servers connected to that switch would be inaccessible if the switch goes out. 
+SPOF is non-redundant parts of a system. If it breaks the entire system fails.
+Can be a faulty switch or an ISP outage.
+Popular SPOFs to look at is Hardware, ISPs, and people. If hardware has no
+backup, that is a SPOF. No backup power supply, SPOF.
+ISP of datacenter can be a SPOF if one of them experience technical
+difficulties. Need a backup ISP if theirs go down.
+People, if IT or a job only has 1 person, that is SPOF. IF anything happens to
+them they are screwed.
+
+
 
 Downtime when maintenance needed (like deploying new code web server needs to be restarted)
 If there is only one instance of a server and we need to take it down, that is shitty work. We need multiple to ensure reliability.
+To bypass the need to shut down and restart in order to update code base, just
+use PHP or a load balancer that routes request to working instances. This is a
+horizontal scale approach, very easy to add more instances.
+
 
 
 Cannot scale if too much incoming traffic
 If there is too much traffic then we good buisness. If we cannot scale then we have bad load balancers or not enough servers. We need to buy more.
+Scalable means growth. The capacity to handle growth. For a system to be
+scalable it should proceed without significantly affecting service.
 
 
 
@@ -244,7 +289,9 @@ To do stuff and trade offs.
 
 What distribution algorithm your load balancer is configured with and how it works
 Hybrid of the 3 algos.
-
+I think that depends on the hardware right?
+I would use weighted if the server's capacity were different.
+If each server could handle the same amount then just do a nice distribution.
 
 Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
 
@@ -252,19 +299,35 @@ Active-Active prob. But active passive is better.
 
 2 or more servers aggregate network traffic and work as a team to distribute the traffic onto the servers. Bad tradeoff of this is near full capacity and if we go over or something breaks then we have user sessions timing out or running slow.
 
-Active-Passive is configuring to H/A mode and traffic is offloaded to the most suitable server. 
+Active-Passive is configuring to H/A mode (high availability) and traffic is
+offloaded to the most suitable server. Smooths out the peaks.
 The other load balancer will be in listen mode and constantly monitor the performance of the primary, ready to always step in and take over the load if the primary is having issues or failing. 
 Uninterrupted service for customers is achieved with this model and we can deal with planned or unplanned service outages. active passive is best if we need a 24/7 connection. 
 
-
+Load balancers sits infront of server farms or groups of servers and routes
+traffic to servers in a way that maxes efficiency.
+Five nines = 99.999% uptime rating. This means 5 minutes of downtime per year.
+Load balancer or ADC, application delivery controller, is the key to ensure
+high availability. 
 
 How a database Primary-Replica (Master-Slave) cluster works
 When a primary fails, one of the secondaries will automatically be the new primary and i have no clue.
+This should be "How distributed high-availability databases work."
+Master-slave architecture is common way to distribute loads between multiple
+databases. One server is the master and that does read and write while slaves
+are like basic copies of them. When a write is done, it is replicated on the
+slave. Adding more slaves is easy and powerful. Downside is slaves are read
+only. 
+New mySQL cluster fixes master-slave and master-master models but at a high
+price and technical infrastructure.
+
 
 
 What is the difference between the Primary node and the Replica node in regard to the application
 ???
-
+Authoritative source and syncronized databases?
+Only the primary shard can accept index requests. Both replica and primary
+shards can serve query requests.
 
 You must be able to explain what are the issues with this infrastructure:
 
@@ -272,11 +335,21 @@ Where are SPOF
 A lot of places?
 
 Security issue (no firewall, no HTTPS)
-Hackzorz./
+Hackzorz.
+Firewalls block corrupt files and evil software. Firewall is for prevention.
+Firewalls good.
+Cons of a firewall is some are not compatible with anti-virus protection. Some
+slow down the system.
+All communication between browser and website is human readable. An HTTP
+request is human readable. HTTPS encrypts it. Cons of HTTPS is initial cost to
+implement but I think it is cheaper now. Website speed can be slower due to the
+encryption and decryption. Generating keys and SSL certificates are annoying.
+
 
 No monitoring
-Cant find problems if no monitoring.
-
+Can't find problems if no monitoring.
+Don't know you are being robbed or taken advantage of if you don't track your
+inventory.
 
 
 
@@ -292,29 +365,89 @@ For every additional element, why you are adding it
 
 What are firewalls for
 Prevent unauthorized acces to or from a computer network.
+Mainly used to prevent users to access private intranets.
+Alll messages entering and leaving the intranet is passed through a firewall.
+Blocks messages that do not meet a specific criteria.
+Good firewalls is the access control features.
+There is packet layer firewalls that checks at the transport protocol layer.
+There is circuit level that validates that packets are connection or data
+packets.
+There is application layer which ensures valid data at the application level
+before connecting.
+And there is proxy server that intercepts all message entering and leaving the
+network.
+
 
 
 Why is the traffic served over HTTPS
 Encryption. Secure. Protects sensitive info. No data loss. Increases trust and confidence. 
+HTTP can be read.
+China does not like HTTP. Cannot read its people.
+
 
 
 What monitoring is used for
 Need to have data to fix or improve things
 https://www.quora.com/What-are-considered-best-practices-when-monitoring-a-web-server
+Regular observation and recording of activities.
+Routinely gathers info on all aspects. Reports help make decisions that help
+improve the projects performace or buisness or efficiency.
+Useful for analysis, if we are being efficient, identifies problems, ensures
+the right people are carrying out the right things, learning, and finding out
+if the result is good.
 
 
 How is the monitoring tool collecting data
 Data points.
+Depends. Some systems pour out data constantly and others only produce data at
+the occurance of a rare event.
+Some data is used to identify problems while others investigate problems.
+EG. speeds of stuff is used to investigate and error handling is identifying.
+Having monitoring data is necessary for observing the system. Monitoring is
+good to help investigate performance issues.
+
+Collecting data is cheap. But not having it when you need it is expensive.
+Collect all reasonably useful data you can have.
+
+Use metrics. Throughput, success, errors, performance.
+Utilize, saturation, errors, availability.
+Events.
+Well-understood, granular, tagged by space, long-lived.
+
 
 
 Explain what to do if you want to monitor your web server QPS
 Use a tool. https://www.quora.com/How-can-I-calculate-how-many-requests-per-second-my-server-can-handle
+
+SHOW STATUS. Take the difference between successive calls to SHOW status and
+divide by number of seconds.
+
+ # mysqladmin status
+
+
 
 
 You must be able to explain what are the issues with this infrastructure:
 
 Why terminating SSL at the load balancer level is an issue
 Okay. https://serversforhackers.com/c/so-you-got-yourself-a-loadbalancer
+When using a load balancer, you points almost all web traffic to it and it will
+distribute that traffic to other web servers.
+
+SSL is secure sockets layer. TLS is transport layer security. SSL/TLS is for
+security on the web.
+
+SSL traffic is decrypted at the load balancer. If the load balancer has to
+decrypt the SSL before passing the request, this is SSL termination. The load
+balancer will alleviate the web server's CPU cycles that would have been needed
+to decrypt. The load balancer can also then add a X-Forwarded header to the
+request.
+Downside of SSL termination is traffic between load balancer and webserver is
+not encrypted so the app can have a man in the middle attack.
+
+Usually you need to have an inside spy at the data center to access this
+unencrypted stream and AWS can re-encrypt between the load balancer and
+webserver which returns the security but at the cost of more CPU.
 
 
 Why having only one MySQL server capable of accepting writes is an issue
