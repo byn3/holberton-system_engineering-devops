@@ -4,6 +4,6 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 service nginx start
 echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
-string="location /redirect_me {\nreturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}\n"
+string="location /redirect_me {\nrewrite 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}\n"
 sudo sed -i "31i $string" /etc/nginx/sites-available/default
 sudo service nginx restart
