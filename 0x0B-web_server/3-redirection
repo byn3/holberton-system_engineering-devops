@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# redirects to nyancat
+ssh ubuntu@35.196.154.244 -i ~/.ssh/holberton 'sudo apt-get -y install nginx'
+ssh ubuntu@35.196.154.244 -i ~/.ssh/holberton 'echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html'
+string="location /redirect_me {\nreturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}\n"
+ssh ubuntu@35.196.154.244 -i ~/.ssh/holberton 'sudo sed -i "$string" /etc/nginx/sites-available/default'
+ssh ubuntu@35.196.154.244 -i ~/.ssh/holberton 'sudo service nginx restart'
