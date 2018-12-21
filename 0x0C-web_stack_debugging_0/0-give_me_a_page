@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# does things
-sudo docker exec -i c70af193f7d0 service apache2 start
+# does things. I used these commands # sudo docker exec -i c70af193f7d0
+sudo service apache2 start
