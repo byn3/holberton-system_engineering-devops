@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 # redirects to 404
 sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 service nginx start
-echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
-string="location /redirect_me {\nreturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}\n"
-sudo sed -i "31i $string" /etc/nginx/sites-available/default
-echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/four04.html
-string2="error_page 404 /four04.html;\nlocation = /four04.html {\nroot /usr/share/nginx/html;\ninternal\n}\n"
-sudo sed -i "30i $string2" /etc/nginx/sites-available/default
+sudo sed -i "30i error_page 404" /etc/nginx/sites-available/default
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
 sudo service nginx restart
