@@ -2,4 +2,5 @@
 # does things. I used these commands # sudo docker exec -i c70af193f7d0
 sudo apt-get -y update
 sudo apt-get -y install apache2
-sudo apache2 restart
+sudo service apache2 start
+sudo service apache2 restart
