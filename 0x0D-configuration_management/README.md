@@ -1,9 +1,3 @@
-Puppet resource type: file (check “Resource types” for all manifest types in  
-the left menu)  
-Puppet lint  
-Puppet emacs mode
-
-
 # What I learned from this project  
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:  
 ---   
