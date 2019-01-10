@@ -1,0 +1,5 @@
+#!/bin/bash
+# A infinite loop to test another script
+while true; do
+sleep 3
+done
