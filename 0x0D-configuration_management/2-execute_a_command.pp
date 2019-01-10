@@ -1,4 +1,3 @@
-#!/bin/bash
 # Terminates the killmenow process
 exec {
   'killmenow':
