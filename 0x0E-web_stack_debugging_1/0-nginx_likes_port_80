@@ -2,4 +2,4 @@
 # script that resets the sym link
 rm /etc/nginx/nsites-enabled/default
 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx start
+service nginx restart
