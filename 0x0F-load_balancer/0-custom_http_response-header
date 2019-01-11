@@ -11,5 +11,6 @@ https://www.youtube.com/watch?v=QH2-TGUlwu4;}\n#error_page 404 \/404.html;@"
 sudo sed -i --follow-symlinks "44i error_page 404 /404.html;"
 /etc/nginx/sites-available/default
 echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
-add_header X-Served_By $host
+sudo sed -i --follow-symlinks "s/http {/http { add_header X-Served-By $HOSTNAME;/" /etc/nginx/nginx.conf
+# add_header X-Served_By $HOSTNAME
 sudo service nginx restart
