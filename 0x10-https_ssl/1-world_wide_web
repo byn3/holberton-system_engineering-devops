@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # Script that does dank memes
 # dig "$1" |  grep -A1 'ANSWER SECTION:' | awk 'FNR == 2 {print $4}'
 
