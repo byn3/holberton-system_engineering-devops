@@ -1,6 +1,4 @@
-# Projects, files, and scripts are contained within the directories  
-
-More specific READMEs and concept coverage are located within the directories.   
+# More specific READMEs and concept coverage are located within the directories.   
 
 ## Description of Each Directory  
 ___  
