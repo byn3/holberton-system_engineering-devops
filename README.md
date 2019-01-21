@@ -1,6 +1,5 @@
 # More specific READMEs and concept coverage are located within the directories.   
 
-## Description of Each Directory  
 ___  
 |           Directory           | Description
 |--------------------------------------------------|----------------------------------------------|
