@@ -47,11 +47,15 @@ ___
 * [LTS (Long Term Support)](https://wiki.ubuntu.com/LTS)  
 * [Shebang (UNIX)](https://en.wikipedia.org/wiki/Shebang_%28Unix%29)  
 * [RTFM](https://en.wikipedia.org/wiki/RTFM)  
-* Permissions.  
+* Permissions and Sysadmin  
 * Manipulating files, working with command line, reading man pages, keyboard shortcuts for bash.  
 * Extra goodies like Playing Star Wars 4 in the Terminal and magic files.  
 * How to Tackle problems: Read, Think, Think More, Ask Why, Read the Error Messages, Google, Google Again, Ask a Peer, Ask More Peers, Ask a TA, Ask other TAs, Ask Alumni, Mentors, or Staff. 
-
+* Bash scripting, DevOps, SRE
+* Regex
+* Infrastructure, system design, networking
+* Web stack debugging
+* Web infrastructure design. Load balancers, firewall, server setup and configurations, etc
 
 
 ### Social Media
