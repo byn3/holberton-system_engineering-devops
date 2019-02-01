@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# script to backup sql database
+# sudo mysql -u root -p * < newdatabase.sql
+sudo mysqldump -u root -p"$1" --opt --events --all-databases > backup.sql
+tar -cvzf "$(date '+%d-%m-%Y').tar.gz" backup.sql
