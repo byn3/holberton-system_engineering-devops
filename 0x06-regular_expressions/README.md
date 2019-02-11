@@ -2,34 +2,19 @@
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:  
 ---  
 
-**What is a PID?**  
-*.*  
-
-**What is a process?**  
-*.*  
-
-**How to find a process’ PID?**  
-*.*  
-
-**How to kill a process?**  
-*.*  
-
-**What is a signal?**  
-*.*  
-
-**What are the 2 signals that cannot be ignored?**  
-*.* 
+## REGEX
 
 ## Each scripts and their output?**  
-* Script 0 - Write a Bash script that displays its own PID.      
-* Script 1 - Write a Bash script that displays a list of currently running processes.    
-* Script 2 - write a Bash script that displays line containing the bash word, thus allowing you to easily get the PID of your Bash process.      
-* Script 3 - Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word bash.    
-* Script 4 - Write a Bash script that displays To infinity and beyond indefinitely.    
-* Script 5 - We killed our 4-to_infinity_and_beyond process using ctrl+c in the previous task, there is actually another way to do this.      
-* Script 6 - Write a Bash script that kills 4-to_infinity_and_beyond process.      
-* Script 7 - Write a Bash script that displays:     
-* Script 8 - Write a Bash script that kills the process 7-highlander.      
+* Script 0 - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method.      
+* Script 1 - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method.    
+* Script 2 - create a Ruby script that accepts one argument and pass it to a regular expression matching method.      
+* Script 3 - create a Ruby script that accepts one argument and pass it to a regular expression matching method.    
+* Script 4 - create a Ruby script that accepts one argument and pass it to a regular expression matching method.    
+* Script 5 - create a Ruby script that accepts one argument and pass it to a regular expression matching method.      
+* Script 6 - The regular expression must match a 10 digit phone number.      
+* Script 7 - The regular expression must be only matching: capital letters.   
+* Script 8 - This exercise was prepared for you by Guillaume Plessis, VP of Infrastructure at TextMe.      
+* Script 9 - One way to get started in getting a Software Engineering job at LinkedIn is to solve their regex puzzle.  
 
 
 #### Limitations of these projects:  
