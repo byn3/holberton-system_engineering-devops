@@ -3,22 +3,22 @@ At the end of this project you are expected to be able to explain to anyone, wit
 ---  
 
 **What is a PID?**  
-*.*  
+*Process identifier.*  
 
 **What is a process?**  
-*.*  
+*An instance of a program being executed.*  
 
 **How to find a process’ PID?**  
-*.*  
+*ps ax | grep "program name".*  
 
 **How to kill a process?**  
-*.*  
+*pkill, killall, or kill -9 pid.*  
 
 **What is a signal?**  
-*.*  
+*A system call response or a readproc. A signal is an interprocess communication or async notification.*  
 
 **What are the 2 signals that cannot be ignored?**  
-*.* 
+*SIGKILL and SIGSTOP.* 
 
 ## Each scripts and their output?**  
 * Script 0 - Write a Bash script that displays its own PID.      
