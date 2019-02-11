@@ -4,7 +4,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 
 Please check 0x07 Networking Basics 1 for more info. Also more notes down at the bottom.   
 
-## Each scripts and their output?**  
+## Each scripts and their output?  
 * Script 0 - Quiz.      
 * Script 1 - Another quiz.    
 * Script 2 - Write a Bash script that configures an Ubuntu server with the below requirements.      
