@@ -2,7 +2,8 @@
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:  
 ---  
 
-Created and designed my own web infrastructure. Tons of notes below.  
+Created and designed my own web infrastructure. Tons of notes below. New concepts. Never heard of these.
+I read everything. Took hours. Learned tons.   
 
 
 ## Each scripts and their output?**  
