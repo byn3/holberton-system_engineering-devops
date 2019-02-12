@@ -6,7 +6,7 @@ I wrote a blog explaining these concepts: What is a primary-replica cluster, MyS
 Then I deleted it after it was graded.
 
 
-## Each scripts and their output?**  
+## Each scripts and their output?  
 * Script 0 and Script 1- Install and configure MySQL on web-01 and web-02 so that they form a primary/replica (master/slave) cluster.
 
 Having a replica member on for your MySQL database has 2 advantages:
