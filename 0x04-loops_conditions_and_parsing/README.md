@@ -3,22 +3,22 @@ At the end of this project you are expected to be able to explain to anyone, wit
 ---  
 
 **How to create SSH keys?**  
-*.*  
+*ssh-keygen.*  
 
 **What is the advantage of using #!/usr/bin/env bash over #!/bin/bash?**  
-*.*  
+*different machines have different paths and enviornments. using /env then the program is usually better.*  
 
 **How to use while, until and for loops?**  
-*.*  
+*Did. Horrible syntax omg....*  
 
 **How to use if, else, elif and case condition statements?**  
-*.*  
+*Did. end me..*  
 
 **How to use the cut command?**  
-*.*  
+*fields with delimiters and many other flags.*  
 
 **What are files and other comparison operators, and how to use them?**  
-*.* 
+*files are files. comparison operators are like greater than gt or lessthan or ne not equal, etc.* 
 
 ## Each scripts and their output?**  
 * Script 0 - Share your public key in your answer file 0-RSA_public_key.pub.    
