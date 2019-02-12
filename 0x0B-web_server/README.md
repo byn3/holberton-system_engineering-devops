@@ -100,7 +100,7 @@ MACHINEE
 
 
 Debugging is about verifying assumptions. Things always fail because nothing is perfect.   
-For the machine level, you want to ask yourself these questions:  
+For the machine level, you want to ask yourself these questions:
 	•	Does the server have free disk space? - df
 	•	Is the server able to keep up with CPU load? - w, top, ps
 	•	Does the server have available memory? free
