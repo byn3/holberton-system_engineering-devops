@@ -12,7 +12,7 @@ if __name__ == "__main__":
     # retrieve the user info, holds name, company json, website, phone, email,
     # username, address, geo location, city, zip, suite, and id
     user_info = requests.get("https://jsonplaceholder.typicode.com/users/{}".
-                           format(employee_id)).json()
+                             format(employee_id)).json()
     # Gets the todo list which contains userid, id, title, completed
     todo_list = requests.get(
                 "https://jsonplaceholder.typicode.com/todos?userId={}".

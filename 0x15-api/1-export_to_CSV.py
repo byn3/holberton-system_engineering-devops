@@ -2,7 +2,7 @@
 """ Python script that creates a csv file """
 
 if __name__ == "__main__":
-    """ script that does what is asked above 
+    """ script that does what is asked above
     and is import protected """
     import csv
     import requests
@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # retrieve the user info, holds name, company json, website, phone, email,
     # username, address, geo location, city, zip, suite, and id
     user_info = requests.get("https://jsonplaceholder.typicode.com/users/{}".
-                           format(employee_id)).json()
+                             format(employee_id)).json()
 
     # Gets the todo list which contains userid, id, title, completed
     todo_list = requests.get(
