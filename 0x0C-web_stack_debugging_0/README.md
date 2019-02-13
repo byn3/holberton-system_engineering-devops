@@ -2,7 +2,7 @@
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:  
 ---  
 
-Fix a broken web server, the first instance of this series.
+Fix a broken web server, the first instance of this series. More notes on the bottom.   
 
 ## Each scripts and their output?  
 * Script 0 - In this first debugging project, you will need to get Apache to run on the container and to return a page containing Hello Holberton when querying the root of it.    
@@ -21,7 +21,7 @@ ___
 -The first line of all your Bash scripts should be exactly #!/usr/bin/env bash  
 -The second line of all your Bash scripts should be a comment explaining what is the script doing  
 
-
+___ 
 
 
 The Webstack debugging series will train you to the art of debugging. Computers and software rarely work the way we want (that’s the “fun” part of the job!).
