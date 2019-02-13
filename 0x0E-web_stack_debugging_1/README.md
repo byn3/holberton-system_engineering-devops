@@ -2,37 +2,12 @@
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:  
 ---  
 
-**How to create SSH keys?**  
-*.*  
+Please see debugging 0 and 2 for more info.
 
-**What is the advantage of using #!/usr/bin/env bash over #!/bin/bash?**  
-*.*  
+## Each scripts and their output?  
+* Script 0 - Write a Bash script that configures a server to the above requirements.    
+* Script 1 - Using what you did for task #0, make your fix short and sweet.  
 
-**How to use while, until and for loops?**  
-*.*  
-
-**How to use if, else, elif and case condition statements?**  
-*.*  
-
-**How to use the cut command?**  
-*.*  
-
-**What are files and other comparison operators, and how to use them?**  
-*.* 
-
-## Each scripts and their output?**  
-* Script 0 - Share your public key in your answer file 0-RSA_public_key.pub.    
-* Script 1 - Write a Bash script that displays Holberton School 10 times.  
-* Script 2 - Write a Bash script that displays Holberton School 10 times.    
-* Script 3 - Write a Bash script that displays Holberton School 10 times.    
-* Script 4 - Write a Bash script that displays Holberton School 10 times.  
-* Script 5 - Write a Bash script that loops from 1 to 10 and:    
-* Script 6 - Write a Bash script that displays numbers from 1 to 20 and:    
-* Script 7 - Write a Bash script that displays the time for 12 hours and 59 minutes:    
-* Script 8 - Write a Bash script that displays:    
-* Script 9 - Write a Bash script that gives you information about the holbertonschool file.  
-* Script 10 - Write a Bash script that displays numbers from 1 to 100.    
- every other line from the input, starting with the first line.  
 
 #### Limitations of these projects:  
 ___
