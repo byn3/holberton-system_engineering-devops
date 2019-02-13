@@ -11,7 +11,10 @@ def number_of_subscribers(subreddit):
     import requests
 
     url = "https://api.reddit.com/r/{}/about".format(subreddit)
-    request = requests.get(url, headers={'User-Agent': 'Byn'})
+    # url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
+    request = requests.get(url,
+                           headers={'User-Agent': 'Byn'},
+                           allow_redirects=False)
     # print(request)
     if request.status_code != 200:
         return 0
