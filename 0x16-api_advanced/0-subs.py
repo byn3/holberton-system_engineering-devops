@@ -16,7 +16,7 @@ def number_of_subscribers(subreddit):
                            headers={'User-Agent': 'Byn'},
                            allow_redirects=False)
     # print(request)
-    if request.status_code != 200:
+    if request.status_code == 404:
         return 0
     request = request.json()
     # print(request)
