@@ -14,7 +14,6 @@ def recurse(subreddit=None, hot_list=[], after=None):
         url += "?after={}".format(after)
     request = requests.get(url, headers={'User-Agent': 'Byn'})
     if request.status_code != 200:
-        print(None)
         return None
     request = request.json()
     threads = request.get('data').get('children')
