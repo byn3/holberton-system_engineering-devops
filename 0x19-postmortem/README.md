@@ -1,3 +1,7 @@
+# ATTENTION! THE SITE IS DOWN AND WE NEED OUR SOLE AND ONLY BRILLIANT ENGINEER TO FIX THIS
+<img src="https://media1.tenor.com/images/85caab51be730a4e1290cd99d7d6e085/tenor.gif">
+
+
 # Issue Summary (that is often what executives will read) must contain:
 
 Duration of the outage with start and end times (including timezone)?  
@@ -8,6 +12,10 @@ What was the impact (what service was down/slow? What were user experiencing? Ho
 
 What was the root cause?  
 `Some intern did .phpp instead of .php`
+
+<img src="https://i.gifer.com/2vs0.gif">
+
+
 
 # Timeline (format bullet point, format: time - keep it short, 1 or 2 sentences) must contain:
 
@@ -29,6 +37,10 @@ Which team/individuals was the incident escalated to?
 How the incident was resolved?   
 `Fixed the typo. Reboot the server`
 
+<img src="https://media.tenor.com/images/00760d23371272db216da7919ce7c884/tenor.gif">
+
+
+
 # Root cause and resolution must contain:
 
 Explain in detail what was causing the issue?   
@@ -36,6 +48,11 @@ Explain in detail what was causing the issue?
 
 Explain in detail how the issue was fixed?  
 `Spellcheck`
+
+
+<img src="https://media1.tenor.com/images/b8401d232cca2fa7cb5e0e876de4f3cd/tenor.gif?itemid=5096483">
+
+
 
 # Corrective and preventative measures must contain:
 
