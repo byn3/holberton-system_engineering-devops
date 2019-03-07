@@ -7,7 +7,7 @@ respawn
 setuid ubuntu
 setgid www-data
 
-env PATH=/home/ubuntu/myproject/myprojectenv/bin
+env PATH=/home/ubuntu/AirBnB_clone_v2/web_flask/myproject/myprojectenv/bin
 chdir /home/ubuntu/Airbnb_clone_v2
 # chdir /home/ubuntu/myproject
 # exec gunicorn --workers 3 --bind unix:myproject.sock -m 007 wsgi
