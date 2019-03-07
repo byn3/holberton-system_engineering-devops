@@ -1,0 +1,14 @@
+description "Gunicorn application server running myproject"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+setuid ubuntu
+setgid www-data
+
+env PATH=/home/ubuntu/myproject/myprojectenv/bin
+chdir /home/ubuntu/Airbnb_clone_v2
+# chdir /home/ubuntu/myproject
+# exec gunicorn --workers 3 --bind unix:myproject.sock -m 007 wsgi
+exec gunicorn --workers 3 --bind localhost:8000 web_flask.0-hello_route:app
